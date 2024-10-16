@@ -1,6 +1,4 @@
 project(lab4)
 add_executable(lab4 main_04.cpp
         Points.cpp
-        Points.h
-        PointSet.cpp
-        PointSet.h)
+        Points.h)
