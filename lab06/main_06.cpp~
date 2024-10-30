@@ -117,6 +117,7 @@ int main() {
         cout<<my<<endl;
         cout << "m6 = mx * my: " << endl;
         m6 = mx * my;
+        cout<<"szorzas"<<endl;
         cout<<"m6: "<<m6.getRows()<<" x "<<m6.getCols()<<endl;
         cout<<m6<<endl;
     } catch (out_of_range& e) {

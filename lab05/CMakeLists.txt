@@ -6,4 +6,7 @@ add_executable(lab5 main_05.cpp
         Quiz.cpp
         Quiz.h
         QuizGame.cpp
-        QuizGame.h)
+        QuizGame.h
+        ../lab06/Matrix.cpp
+        ../lab06/Matrix.h
+)
