@@ -1,0 +1,16 @@
+//
+// Created by Balazs on 2024. 11. 05..
+//
+
+#ifndef PARCIALISGYAK2_LIST_H
+#define PARCIALISGYAK2_LIST_H
+
+
+
+class List {
+
+};
+
+
+
+#endif //PARCIALISGYAK2_LIST_H

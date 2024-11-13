@@ -152,7 +152,7 @@ int main() {
     });
 
     // Eredmény kiíratása
-    cout << "Honapok a furcsa abece szerint rendezve: ";
+    cout << "Hónapok a furcsa ábécé szerint rendezve: ";
     for (const auto& month : months) {
         cout << month << " ";
     }

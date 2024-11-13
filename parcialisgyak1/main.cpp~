@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+#include "List.h"
+int main() {
+    List list1("input.txt");
+    cout << "list1:"<<list1<<endl;
+    
+    return 0;
+}
