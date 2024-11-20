@@ -17,7 +17,7 @@ int main() {
     cout << manager << endl;
 
     // Törlünk egy alkalmazottat
-    manager.deleteAlkalmazott(2);
+    manager.deleteAlkalmazott(alkalmazott1);
 
     // Újra kiírjuk a manager adatait
     cout << manager << endl;

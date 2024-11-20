@@ -1,0 +1,46 @@
+//
+// Created by Balazs on 2024. 11. 20..
+//
+
+#include "Manager.h"
+
+
+void Manager::addAlkalmazott(Alkalmazott *alkalmazott) {
+    this->beosztottak.push_back(alkalmazott);
+}
+
+void Manager::deleteAlkalmazott(int id) {
+    // Keresés az id alapján és törlés
+    auto it = std::find_if(beosztottak.begin(), beosztottak.end(),
+                           [id](const Alkalmazott* alkalmazott) {
+                               return alkalmazott->getId() == id; // Azonosító összehasonlítása
+                           });
+
+    // Ha megtaláltuk az alkalmazottat, töröljük
+    if (it != beosztottak.end()) {
+        beosztottak.erase(it);
+        cout << "Alkalmazott törölve, ID: " << id << endl;
+    } else {
+        cout << "Nem található alkalmazott a megadott ID-val: " << id << endl;
+    }
+}
+
+int Manager::beosztottakSzama() const {
+    return this->beosztottak.size();
+}
+
+void Manager::print(ostream &os) const {
+    Alkalmazott::print(os);
+
+    os << ", Beosztottak szama: " << beosztottakSzama() << endl;
+
+    for (const auto &beosztott : beosztottak) {
+        os << "  - ";
+        if (beosztott) {
+            os << *beosztott;
+        } else {
+            os << "nullptr";
+        }
+        os << endl;
+    }
+}
