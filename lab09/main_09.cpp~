@@ -5,7 +5,7 @@ int main() {
     string subjects[]{"math", "romanian", "hungarian"};
     int numSubjects = sizeof(subjects) / sizeof(subjects[0]);
     Student s1 = Student(1, "Balazs", "Bence");
-//    cout<<s1;
+    cout<<s1;
     GraduationDao d1 = GraduationDao(2024);
     d1.enrollStudents("names.txt");
     cout<<"Number of students: "<<d1.numEnrolled()<<endl;

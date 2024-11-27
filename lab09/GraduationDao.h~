@@ -1,0 +1,14 @@
+//
+// Created by Balazs on 2024. 11. 27..
+//
+
+#ifndef LAB9_GRADUATIONDAO_H
+#define LAB9_GRADUATIONDAO_H
+
+
+class GraduationDao {
+
+};
+
+
+#endif //LAB9_GRADUATIONDAO_H
