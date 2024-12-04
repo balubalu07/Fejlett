@@ -133,7 +133,7 @@ Matrix &Matrix::operator=(const Matrix &mat) {
         this->mCols = mat.mCols;
         this->mElements = new double *[mRows];
         for (int i = 0; i < mRows; ++i) {
-            mElements[i] = new double[mCols];
+            this->mElements[i] = new double[mCols];
         }
         for (int i = 0; i < mRows; ++i) {
             for (int j = 0; j < mCols; ++j) {

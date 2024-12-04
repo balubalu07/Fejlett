@@ -30,9 +30,9 @@ int main() {
     for(auto s : r1){
         cout<<s;
     }
-    cout<<"NumSettlements:"<<ss.numSettlements()<<endl;
-    cout<<"numcounties:"<<ss.numCounties()<<endl;
-    cout<<"num settlements by county CV :"<<ss.numSettlementsByCounty("CV")<<endl;
+    cout<<"NumSettlements"<<ss.numSettlements()<<endl;
+    cout<<"numcounties"<<ss.numCounties()<<endl;
+    cout<<"numsettlementsbycounty"<<ss.numSettlementsByCounty("CV")<<endl;
     vector<Settlement>r2 = ss.findSettlementsByName("Magina");
     try {
         Settlement found = ss.findSettlementsByNameAndCounty("Badai","AB");
