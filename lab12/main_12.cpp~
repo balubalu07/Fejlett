@@ -7,7 +7,7 @@ int main() {
 t1.trainFromFile("bible.txt");
 //    t1.printData();
     string generatedText;
-    generatedText=t1.generate("my lord",15);
-    cout<<generatedText;
+//    generatedText=t1.generate("my lord",15);
+//    cout<<generatedText;
     return 0;
 }
